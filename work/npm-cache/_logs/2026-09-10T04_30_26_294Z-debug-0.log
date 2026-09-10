@@ -1,0 +1,71 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@11.13.0
+2 info using node@v24.16.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/claire/Documents/Codex/2026-09-10/prompt-1-generative-ai-for-business/.npmrc
+5 silly config load:file:/Users/claire/.npmrc
+6 silly config load:file:/Users/claire/.npm-global/etc/npmrc
+7 verbose title npm install
+8 verbose argv "install" "--loglevel" "error"
+9 verbose logfile logs-max:10 dir:/Users/claire/Documents/Codex/2026-09-10/prompt-1-generative-ai-for-business/work/npm-cache/_logs/2026-09-10T04_30_26_294Z-
+10 verbose logfile /Users/claire/Documents/Codex/2026-09-10/prompt-1-generative-ai-for-business/work/npm-cache/_logs/2026-09-10T04_30_26_294Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly idealTree buildDeps
+14 silly reify moves {}
+15 silly audit bulk request {
+15 silly audit   '@oxc-project/types': [ '0.149.0' ],
+15 silly audit   '@rolldown/binding-android-arm-eabi': [ '1.2.8' ],
+15 silly audit   '@rolldown/binding-android-arm64': [ '1.2.8' ],
+15 silly audit   '@rolldown/binding-darwin-arm64': [ '1.2.8' ],
+15 silly audit   '@rolldown/binding-darwin-x64': [ '1.2.8' ],
+15 silly audit   '@rolldown/binding-freebsd-x64': [ '1.2.8' ],
+15 silly audit   '@rolldown/binding-linux-arm-gnueabihf': [ '1.2.8' ],
+15 silly audit   '@rolldown/binding-linux-arm64-gnu': [ '1.2.8' ],
+15 silly audit   '@rolldown/binding-linux-arm64-musl': [ '1.2.8' ],
+15 silly audit   '@rolldown/binding-linux-ppc64-gnu': [ '1.2.8' ],
+15 silly audit   '@rolldown/binding-linux-s390x-gnu': [ '1.2.8' ],
+15 silly audit   '@rolldown/binding-linux-x64-gnu': [ '1.2.8' ],
+15 silly audit   '@rolldown/binding-linux-x64-musl': [ '1.2.8' ],
+15 silly audit   '@rolldown/binding-openharmony-arm64': [ '1.2.8' ],
+15 silly audit   '@rolldown/binding-win32-arm64-msvc': [ '1.2.8' ],
+15 silly audit   '@rolldown/binding-win32-x64-msvc': [ '1.2.8' ],
+15 silly audit   '@rolldown/pluginutils': [ '1.0.1' ],
+15 silly audit   '@vitejs/plugin-react': [ '6.1.1' ],
+15 silly audit   'detect-libc': [ '2.1.2' ],
+15 silly audit   fdir: [ '6.5.0' ],
+15 silly audit   fsevents: [ '2.3.3' ],
+15 silly audit   lightningcss: [ '1.33.0' ],
+15 silly audit   'lightningcss-android-arm64': [ '1.33.0' ],
+15 silly audit   'lightningcss-darwin-arm64': [ '1.33.0' ],
+15 silly audit   'lightningcss-darwin-x64': [ '1.33.0' ],
+15 silly audit   'lightningcss-freebsd-x64': [ '1.33.0' ],
+15 silly audit   'lightningcss-linux-arm-gnueabihf': [ '1.33.0' ],
+15 silly audit   'lightningcss-linux-arm64-gnu': [ '1.33.0' ],
+15 silly audit   'lightningcss-linux-arm64-musl': [ '1.33.0' ],
+15 silly audit   'lightningcss-linux-x64-gnu': [ '1.33.0' ],
+15 silly audit   'lightningcss-linux-x64-musl': [ '1.33.0' ],
+15 silly audit   'lightningcss-win32-arm64-msvc': [ '1.33.0' ],
+15 silly audit   'lightningcss-win32-x64-msvc': [ '1.33.0' ],
+15 silly audit   nanoid: [ '3.3.18' ],
+15 silly audit   picocolors: [ '1.1.1' ],
+15 silly audit   picomatch: [ '4.0.7' ],
+15 silly audit   postcss: [ '8.5.28' ],
+15 silly audit   react: [ '19.3.0' ],
+15 silly audit   'react-dom': [ '19.3.0' ],
+15 silly audit   rolldown: [ '1.2.8' ],
+15 silly audit   scheduler: [ '0.28.0' ],
+15 silly audit   'source-map-js': [ '1.2.1' ],
+15 silly audit   tinyglobby: [ '0.2.17' ],
+15 silly audit   vite: [ '8.2.2' ]
+15 silly audit }
+16 http cache fsevents@https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz 0ms (cache hit)
+17 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 1695ms
+18 silly audit report {}
+19 silly ADD node_modules/fsevents
+20 verbose cwd /Users/claire/Documents/Codex/2026-09-10/prompt-1-generative-ai-for-business
+21 verbose os Darwin 25.6.0
+22 verbose node v24.16.0
+23 verbose npm  v11.13.0
+24 verbose exit 0
+25 info ok
