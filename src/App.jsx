@@ -25,9 +25,8 @@ function App() {
     <main id="main">
       <section className="hero" id="top" aria-labelledby="hero-title">
         <div className="hero-copy">
-          <p className="hero-place">西南政法大学 · 学生成长支持谈话室</p>
           <h1 id="hero-title"><span>有些话，</span><span>不必一个人扛着。</span></h1>
-          <p className="hero-intro">这里不是一间需要你立刻想清楚一切的房间。<br />如果你愿意，我们可以坐下来，慢慢谈。</p>
+          <p className="hero-intro">西南政法大学的学生成长支持谈话室。这里不要求你立刻想清楚一切；如果你愿意，我们可以坐下来，慢慢谈。</p>
           <div className="hero-actions"><a className="button primary" href="#about">了解谈话室</a><a className="button secondary" href="#contact">预约 / 联系</a></div>
           <a className="emergency-link" href="#emergency">现在需要更及时的支持？ <span>查看紧急支持</span></a>
         </div>
@@ -45,7 +44,7 @@ function App() {
 
       <section className="topics section" id="topics" aria-labelledby="topics-title">
         <div className="section-heading narrow"><h2 id="topics-title">你可以来聊什么</h2><p>你不需要先证明自己的问题足够严重，才值得被认真倾听。</p></div>
-        <div className="topic-list">{topics.map(([title, text], index) => <article className="topic" key={title}><span className="topic-index">{String(index + 1).padStart(2, '0')}</span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div>
+        <div className="topic-list">{topics.map(([title, text]) => <article className="topic" key={title}><div><h3>{title}</h3><p>{text}</p></div></article>)}</div>
       </section>
 
       <section className="moments section" aria-labelledby="moments-title">
@@ -66,12 +65,12 @@ function App() {
 
       <section className="contact section" id="contact" aria-labelledby="contact-title">
         <div className="section-heading"><h2 id="contact-title">把见面约在合适的时候。</h2><p>服务仅面向本校学生。建议提前 2 天预约。</p></div>
-        <div className="contact-grid"><div className="contact-details"><p className="contact-label">联系胡老师</p><a href={`tel:${site.phone}`} className="contact-value">{site.phone}</a><a href={`mailto:${site.email}`} className="contact-value email">{site.email}</a></div><div className="booking-card"><p className="contact-label">预约问卷</p><h3>选择一个合适的时段</h3><p>问卷仅用于预约安排。请勿填写详细个人经历或其他敏感内容；如果正在经历紧急危险，请不要等待预约。</p><a className="booking-link" href={site.bookingUrl} target="_blank" rel="noreferrer">打开预约问卷</a></div></div>
+        <div className="contact-grid"><div className="contact-details"><h3>联系胡老师</h3><a href={`tel:${site.phone}`} className="contact-value">{site.phone}</a><a href={`mailto:${site.email}`} className="contact-value email">{site.email}</a></div><div className="booking-card"><h3>选择一个合适的时段</h3><p>问卷仅用于预约安排。请勿填写详细个人经历或其他敏感内容；如果正在经历紧急危险，请不要等待预约。</p><a className="booking-link" href={site.bookingUrl} target="_blank" rel="noreferrer">打开预约问卷</a></div></div>
       </section>
 
-      <section className="emergency" id="emergency" aria-labelledby="emergency-title"><div><p>紧急支持</p><h2 id="emergency-title">现在，安全比等待预约更重要。</h2></div><div><p>如果你正有伤害自己或他人的想法、无法保证自身安全，或正处于紧急危险，请不要等待预约。请立即联系身边可信赖的人、学校官方渠道、当地紧急服务，并尽快前往最近的医疗机构。</p></div></section>
+      <section className="emergency" id="emergency" aria-labelledby="emergency-title"><div><h2 id="emergency-title">现在，安全比等待预约更重要。</h2></div><div><p>如果你正有伤害自己或他人的想法、无法保证自身安全，或正处于紧急危险，请不要等待预约。请立即联系身边可信赖的人、学校官方渠道、当地紧急服务，并尽快前往最近的医疗机构。</p></div></section>
 
-      <section className="faq section" id="faq" aria-labelledby="faq-title"><div className="section-heading narrow"><h2 id="faq-title">常见问题</h2></div><div className="faq-layout"><div className="faq-list">{faqs.map(([question, answer]) => <details key={question}><summary>{question}</summary><p>{answer}</p></details>)}</div><aside className="faq-aside"><img src={editorialPortrait} loading="lazy" alt="温暖画风的校园树影插画" /><div><p className="contact-label">给第一次来的人</p><h3>不必准备好，才可以开口。</h3><p>不确定要说什么也没关系。你可以从“我最近有点乱”开始。</p></div></aside></div></section>
+      <section className="faq section" id="faq" aria-labelledby="faq-title"><div className="section-heading narrow"><h2 id="faq-title">常见问题</h2></div><div className="faq-layout"><div className="faq-list">{faqs.map(([question, answer]) => <details key={question}><summary>{question}</summary><p>{answer}</p></details>)}</div><aside className="faq-aside"><img src={editorialPortrait} loading="lazy" alt="温暖画风的校园树影插画" /><div><h3>不必准备好，才可以开口。</h3><p>不确定要说什么也没关系。你可以从“我最近有点乱”开始。</p></div></aside></div></section>
     </main>
     <footer><p>“胡老师的聊天室”提供学生成长支持信息，不构成医疗诊断、治疗或紧急服务。</p></footer>
   </>
